@@ -34,7 +34,6 @@ button {
 
 .container {
   width: 34.375rem;
-  /* height: 55.75rem; */
   background: var(--primary-bg-color);
 }
 
@@ -61,7 +60,6 @@ button {
 }
 
 .main__content {
-  background-size: cover;
   min-height: 46.96rem;
   border-radius: 0.9rem;
   display: flex;
@@ -82,12 +80,19 @@ button {
   color: var(--secondary-text-color);
 }
 
+/* Swipe section */
+.swipe-section {
+  text-align: center;
+  padding: 1.5em 0;
+}
+
 .swipe-section__btn {
   border: none;
   background: var(--seconday-bg-color);
   border-radius: 50%;
-  text-align: center;
   padding: 1em;
+  cursor: pointer;
+  margin: 0 0.375em 0;
 }
 
 .swipe-section__icon {
