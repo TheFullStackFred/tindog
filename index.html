@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="main.js" defer></script>
     <title>Tindog</title>
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
       <header class="header">
         <a href="#"
           ><img
@@ -24,7 +31,27 @@
             alt="chat icon"
         /></a>
       </header>
+
+      <!-- Main -->
       <main id="main" class="main"></main>
+
+      <!-- Swipe section -->
+      <section class="swipe-section">
+        <button class="swipe-section__btn">
+          <img
+            class="swipe-section__icon"
+            src="/images/icon-cross.png"
+            alt="cross icon"
+          />
+        </button>
+        <button class="swipe-section__btn">
+          <img
+            class="swipe-section__icon"
+            src="/images/icon-heart.png"
+            alt="heart icon"
+          />
+        </button>
+      </section>
     </div>
   </body>
 </html>
