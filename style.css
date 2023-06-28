@@ -36,9 +36,24 @@ body {
 }
 
 .header__icon {
-  height: 2.125rem;
+  width: 2.02rem;
 }
 
 .header__logo {
-  height: 2.625rem;
+  width: 5.25rem;
+}
+
+/* Main */
+.main {
+  padding: 0 0.5em;
+}
+
+.main__content {
+  background-size: cover;
+  min-height: 46.96rem;
+  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: #fff;
 }
