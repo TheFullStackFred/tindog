@@ -1,3 +1,6 @@
+:root {
+}
+
 *,
 *::before,
 *::after {
@@ -8,4 +11,34 @@
   margin: 0;
   padding: 0;
   font: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: #2c2c2c;
+}
+
+.container {
+  width: 34.375rem;
+  height: 55.75rem;
+  background: linear-gradient(180deg, #fff 0%, #f7f8fc 100%);
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.0625rem;
+  padding: 0 1.125em;
+}
+
+.header__icon {
+  height: 2.125rem;
+}
+
+.header__logo {
+  height: 2.625rem;
 }
