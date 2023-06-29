@@ -14,7 +14,10 @@ function render() {
 
 function getNewDog() {
   currentDog = new Dog(dogsData.shift())
-  render()
+
+  setTimeout(() => {
+    render()
+  }, 2000)
 }
 
 function accept() {
