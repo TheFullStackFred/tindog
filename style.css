@@ -70,6 +70,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  position: relative;
 }
 
 .main__info {
@@ -91,6 +92,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main__badge {
+  width: 14.6rem;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 55px;
+  left: 15px;
 }
 
 /* Swipe section */
