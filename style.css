@@ -102,3 +102,20 @@ button {
 .swipe-section__icon {
   vertical-align: middle;
 }
+
+.swipe-section__btn--reject:hover,
+.swipe-section__btn--reject:focus {
+  background: #ffe7ef;
+  box-shadow: 0px 10px 20px #edd9df;
+}
+
+.swipe-section__btn--accept:hover,
+.swipe-section__btn--accept:focus {
+  background: #dbfff4;
+  box-shadow: 0px 10px 20px #ccf1e6;
+}
+
+.swipe-section__btn--reject:focus,
+.swipe-section__btn--accept:focus {
+  outline: none;
+}
