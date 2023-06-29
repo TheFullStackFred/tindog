@@ -9,7 +9,13 @@ document.getElementById('reject-btn').addEventListener('click', reject)
 render()
 
 function render() {
-  document.getElementById('main').innerHTML = currentDog.getDogHtml()
+  if (dogsData.length > 0) {
+    document.getElementById('main').innerHTML = currentDog.getDogHtml()
+  } else {
+    document.getElementById(
+      'main'
+    ).innerHTML = `<h1 class="main__empty-message">No more dogs in your area</h1>`
+  }
 }
 
 function getNewDog() {

@@ -83,6 +83,11 @@ button {
   color: var(--secondary-text-color);
 }
 
+.main__empty-message {
+  text-align: center;
+  color: #2c2c2c;
+}
+
 /* Swipe section */
 .swipe-section {
   text-align: center;
