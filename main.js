@@ -24,12 +24,12 @@ function render() {
 }
 
 function getNewDog() {
+  render()
   acceptBtn.style.display = 'none'
   rejectBtn.style.display = 'none'
 
-  currentDog = new Dog(dogsData.shift())
-
   setTimeout(() => {
+    currentDog = new Dog(dogsData.shift())
     render()
   }, 2000)
 }
