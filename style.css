@@ -60,10 +60,11 @@ button {
 /* Main */
 .main {
   padding: 0 0.5em;
+  height: 46.96rem;
 }
 
 .main__content {
-  min-height: 46.96rem;
+  height: 100%;
   border-radius: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -85,7 +86,7 @@ button {
 
 .main__empty-message {
   text-align: center;
-  color: #2c2c2c;
+  color: var(--secondary-text-color);
 }
 
 /* Swipe section */
