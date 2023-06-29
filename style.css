@@ -85,8 +85,11 @@ button {
 }
 
 .main__empty-message {
-  text-align: center;
   color: var(--secondary-text-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Swipe section */
