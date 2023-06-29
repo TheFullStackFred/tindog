@@ -12,7 +12,7 @@ rejectBtn.addEventListener('click', reject)
 render()
 
 function render() {
-  if (dogsData.length > 0) {
+  if (currentDog) {
     acceptBtn.style.display = 'inline'
     rejectBtn.style.display = 'inline'
     document.getElementById('main').innerHTML = currentDog.getDogHtml()
@@ -29,7 +29,11 @@ function getNewDog() {
   rejectBtn.style.display = 'none'
 
   setTimeout(() => {
-    currentDog = new Dog(dogsData.shift())
+    if (dogsData.length > 0) {
+      currentDog = new Dog(dogsData.shift())
+    } else {
+      currentDog = null
+    }
     render()
   }, 2000)
 }
