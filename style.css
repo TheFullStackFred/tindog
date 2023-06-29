@@ -37,6 +37,7 @@ button {
 
 .container {
   width: 34.375rem;
+  height: 60.8rem;
   background: var(--primary-bg-color);
 }
 
