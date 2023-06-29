@@ -3,8 +3,13 @@ class Dog {
     Object.assign(this, data)
   }
 
+  setMatchStatus(bool) {
+    this.hasBeenSwiped = bool
+    this.hasBeenSwiped = true
+  }
+
   getDogHtml() {
-    const { name, avatar, age, bio, hasBeenSwiped, hasBeenLikes } = this
+    const { name, avatar, age, bio } = this
 
     return `
     <div class="main__content" style="background: url('${avatar}')center/cover">

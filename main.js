@@ -1,15 +1,28 @@
 import dogsData from './data.js'
 import Dog from './Dog.js'
 
-function getNewDog() {
-  const nextDogData = [...dogsData]
-  console.log(nextDogData)
-  return nextDogData ? new Dog(nextDogData.shift()) : {}
-}
+let currentDog = new Dog(dogsData.shift())
+
+document.getElementById('accept-btn').addEventListener('click', accept)
+document.getElementById('reject-btn').addEventListener('click', reject)
+
+render()
 
 function render() {
-  document.getElementById('main').innerHTML = dog.getDogHtml()
+  document.getElementById('main').innerHTML = currentDog.getDogHtml()
 }
 
-let dog = getNewDog()
-render()
+function getNewDog() {
+  currentDog = new Dog(dogsData.shift())
+  render()
+}
+
+function accept() {
+  currentDog.setMatchStatus(true)
+  getNewDog()
+}
+
+function reject() {
+  currentDog.setMatchStatus(false)
+  getNewDog()
+}
