@@ -3,13 +3,18 @@ import Dog from './Dog.js'
 
 let currentDog = new Dog(dogsData.shift())
 
-document.getElementById('accept-btn').addEventListener('click', accept)
-document.getElementById('reject-btn').addEventListener('click', reject)
+const acceptBtn = document.getElementById('accept-btn')
+const rejectBtn = document.getElementById('reject-btn')
+
+acceptBtn.addEventListener('click', accept)
+rejectBtn.addEventListener('click', reject)
 
 render()
 
 function render() {
   if (dogsData.length > 0) {
+    acceptBtn.style.display = 'inline'
+    rejectBtn.style.display = 'inline'
     document.getElementById('main').innerHTML = currentDog.getDogHtml()
   } else {
     document.getElementById(
@@ -19,6 +24,9 @@ function render() {
 }
 
 function getNewDog() {
+  acceptBtn.style.display = 'none'
+  rejectBtn.style.display = 'none'
+
   currentDog = new Dog(dogsData.shift())
 
   setTimeout(() => {
